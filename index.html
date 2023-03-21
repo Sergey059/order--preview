@@ -1,491 +1,56 @@
 <!DOCTYPE html>
-<html
-  class="js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"
->
+<html lang="ru-RU">
   <head>
-    <meta charset="utf-8" />
-    <title>Оформление заказа | Кафе Арарат</title>
-    <!--<base href="https://xn--80aaa6dbn.xn--80adakphkrmjo0k.xn--p1ai/" />-->
-    <meta name="description" content="" />
-    <meta
-      property="og:image"
-      content="https://xn--80adakphkrmjo0k.xn--p1ai/img/og/baj.png"
-    />
-    <meta name="keywords" content="" />
-    <meta name="robots" content="noodp,noydir,index,follow" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
-    <meta name="author" content="Андрей Иванов" />
-    <meta name="contact" content="ivanof.me@ya.ru" />
-    <meta name="copyright" content="Все права принадлежат Андрею Иванову" />
-
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <!--
-<meta name="viewport" content="width=device-width, initial-scale=1">
--->
-    <link rel="icon" type="image/png" href="assets/template/favicon.png" />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="assets/template/favicon.png"
-    />
-    <link href="assets/template/css/style.css" rel="stylesheet" />
-
-    <style>
-      body {
-        background-color: #f8f8f8;
-
-        background-repeat: repeat;
-        background-position: left top;
-        background-size: auto;
-      }
-
-      .header-bottom:before {
-        background-image: linear-gradient(135deg, #f8f8f8 50%, transparent 50%),
-          linear-gradient(225deg, #f8f8f8 50%, transparent 50%),
-          linear-gradient(45deg, #f8f8f8 50%, transparent 50%),
-          linear-gradient(-45deg, #f8f8f8 50%, transparent 50%);
-      }
-      .content-section {
-        background: #f8f8f8;
-      }
-    </style>
-    <script>
-      miniShop2Config = {
-        close_all_message:
-          "\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435",
-        cssUrl: "\/assets\/components\/minishop2\/css\/web\/",
-        jsUrl: "\/assets\/components\/minishop2\/js\/web\/",
-        actionUrl: "\/assets\/components\/minishop2\/action.php",
-        ctx: "web",
-        price_format: [2, ".", " "],
-        price_format_no_zeros: true,
-        weight_format: [3, ".", " "],
-        weight_format_no_zeros: true,
-      };
-    </script>
-    <style type="text/css">
-      .fancybox-margin {
-        margin-right: 0px;
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <link rel="icon" href="images/favicon.ico">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style-widget.min.css">
   </head>
-  <body class="base-template anchor-menu-init">
-    <!-- Mobile menu -->
-    <div class="mobile-menu" id="mobmenu">
-      <div class="menu-button">
-        <span class="icon-menu-burger">
-          <span class="icon-menu-burger__line"></span>
-        </span>
+  <body>
+    <header class="header">
+      <div class="container header__container"><a class="logo" href="index.html">Logo</a>
       </div>
-      <div class="mobile-menu-inner">
-        <ul class="">
-          <li class="first"><a href="#vtoroe">Второе</a></li>
-          <li><a href="#zakuski">Гарниры</a></li>
-          <li class="last"><a href="#na-grile">На гриле</a></li>
-        </ul>
-      </div>
-      <div class="push60"></div>
-    </div>
-    <div class="overlay"></div>
-    <!-- /. Mobile menu -->
-
-    <div class="main-wrapper">
-      <div class="header">
-        <div class="header-top-push"></div>
-        <div class="header-top">
-          <div class="container">
-            <div class="inner relative">
-              <div class="table">
-                <div class="table-cell">
-                  <div class="header-top-left left">
-                    <span class="address">
-                      <i class="fa fa-map-marker" aria-hidden="true"></i>
-                      Кафе Арарат | ул. Карла Маркса, 8
-                    </span>
-
-                    <span class="shedule">
-                      <i class="fa fa-clock-o" aria-hidden="true"></i>
-                      Приём заказов: c 9:00 - 21:00
-                    </span>
-                  </div>
-                  <div class="header-top-right">
-                    <div class="header-tel">
-                      <div class="pulse">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                      </div>
-                      <div class="table">
-                        <div class="table-cell">
-                          <a href="tel:+79613750799">+7 961 375 07 99</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cleaner"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="header-bottom">
-          <div class="container">
-            <div class="inner relative">
-              <div class="table">
-                <div class="table-cell">
-                  <div class="logo left">
-                    <div class="table">
-                      <div class="table-cell">
-                        <a href="https://ленивыйповар.рф/">
-                          <img
-                            src="assets/template/images/logo.png"
-                            alt="Кафе Арарат"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="header-bottom-bar right">
-                    <div class="table">
-                      <div class="table-cell">
-                        <div class="header-cart">
-                          <div id="msMiniCart" class="">
-                            <div class="empty text-center">
-                              <div>
-                                <i class="fa fa-shopping-cart f18"></i>
-                                <span class="hidden-xs">Корзина </span>
-                                ( <span class="ms2_total_count">0</span> )
-                              </div>
-                            </div>
-
-                            <div class="not_empty text-center relative">
-                              <a href="korzina.html" class="absolute"></a>
-                              <div>
-                                <i class="fa fa-shopping-cart f18"></i>
-                                <span class="hidden-xs">Корзина </span>
-                                ( <span class="ms2_total_count">0</span> )
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="menu-button">
-                          <span class="icon-menu-burger">
-                            <span class="icon-menu-burger__line"></span>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="top-menu-wrapper right">
-                    <div class="table">
-                      <div class="table-cell">
-                        <div class="top-menu">
-                          <ul class="">
-                            <li class="first"><a href="#vtoroe">Второе</a></li>
-                            <li><a href="#zakuski">Гарниры</a></li>
-                            <li class="last">
-                              <a href="#na-grile">На гриле</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="header-bottom-push"></div>
-      </div>
-
-      <div class="middle">
-        <div class="push50"></div>
-
-        <div class="container">
-          <h1>Оформление заказа</h1>
-          <div class="content">
-            <div class="row">
-              <div class="order">
-                <div id="msCart">
-                  <div class="table-responsive">
-                    <h6><strong>Заказ 2303/31 успешно оплачен</strong></h6>
-
-                    <h6>Ваш заказ:</h6>
-
-                    <table class="table table-striped">
-                      <tbody>
-                        <tr class="header">
-                          <th class="image">&nbsp;</th>
-                          <th class="title">Наименование</th>
-                          <th class="count">Количество</th>
-                          <th class="price">Стоимость</th>
-                        </tr>
-                        <tr>
-                          <td class="image">
-                            <img
-                              src="assets/images/products/17/270x270/1932446334880607478.jpg"
-                              alt="Картофельное пюре"
-                              title="Картофельное пюре"
-                            />
-                          </td>
-                          <td class="title">
-                            <a href="kartofelnoe-pyure.html"
-                              >Картофельное пюре</a
-                            >
-                          </td>
-                          <td class="count">2 шт.</td>
-
-                          <td class="price">63 руб.</td>
-                        </tr>
-                        <tr>
-                          <td class="image">
-                            <img
-                              src="assets/images/products/69/270x270/makarony.jpg"
-                              alt="Макароны"
-                              title="Макароны"
-                            />
-                          </td>
-                          <td class="title">
-                            <a href="makaronyi.html">Макароны</a>
-                          </td>
-                          <td class="count">2 шт.</td>
-
-                          <td class="price">50 руб.</td>
-                        </tr>
-                        <tr>
-                          <td class="image">
-                            <img
-                              src="assets/images/products/70/270x270/skrinshot-11-03-2023-000340.jpg"
-                              alt="Рис"
-                              title="Рис"
-                            />
-                          </td>
-                          <td class="title">
-                            <a href="ris.html">Рис</a>
-                          </td>
-                          <td class="count">1 шт.</td>
-
-                          <td class="price">50 руб.</td>
-                        </tr>
-                        <tr class="order-total">
-                          <th class="total" colspan="2">Итого:</th>
-                          <th class="total_count">
-                            <span class="ms2_total_count">5</span> шт.
-                          </th>
-
-                          <th class="total_cost">
-                            <span class="ms2_total_cost">276</span> руб.
-                          </th>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
-                  <h4>Итого: <strong>276</strong> руб.</h4>
-                </div>
-              </div>
-
-              <div class="status">
-                <h4 class="status-title">Статус заказа</h4>
-                <ul class="status-list">
-                  <li class="status-item ready">Принят<span>&#10003;</span></li>
-                  <li class="status-item active">Готовим<span></span></li>
-                  <li class="status-item">Передан курьеру<span></span></li>
-                  <li class="status-item">Доставлен<span></span></li>
-                </ul>
-              </div>
-
-              <div class="col-md-5 col-md-offset-1">
-                <div class="order-content"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="push50"></div>
-      </div>
-
-      <div class="footer-push"></div>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
+    </header>
+    <main class="content">
       <div class="container">
-        <div class="footer-inner relative">
-          <div class="footer-top">
-            <div class="row min">
-              <div class="col-md-9">
-                <div class="footer-menu">
-                  <ul class="">
-                    <li class="first">
-                      <a href="o-servise.html">О сервисе</a>
-                    </li>
-                    <li>
-                      <a href="dostavka-i-oplata.html">Доставка и оплата</a>
-                    </li>
-                    <li class="last"><a href="tarifyi.html">Тарифы</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-3 text-right-md">
-                <div class="push15 hidden-md hidden-lg"></div>
-                <div class="social-links f18">
-                  <a href="https://vk.com/dostavka.povar" target="_blank"
-                    ><i class="fa fa-vk"></i
-                  ></a>
-                </div>
-              </div>
+        <h1 class="title">Order Page</h1>
+        <div class="status">
+          <h4 class="status__title">Статус заказа</h4>
+          <ul class="status__list">
+            <li class="status__item status__item--ready"><span class="status__text">Принят</span></li>
+            <li class="status__item"><span class="status__text">Готовим</span></li>
+            <li class="status__item"><span class="status__text">Передан курьеру</span></li>
+            <li class="status__item"><span class="status__text">Доставлен</span></li>
+          </ul>
+          <div class="status__footer">
+            <div class="status__prew">
+              <p>Заказ <span class="status__order">2303/14</span> успешно оплачен</p>
+              <p>Времени прошло: <span class="status__time">0</span> sec</p>
             </div>
-          </div>
-          <div class="footer-bottom">
-            <div class="row">
-              <div class="col-md-9">
-                <div class="copyright">
-                  © 2023 Кафе Арарат<br />
-                  ленивыйповар.рф - сервис заказа еды с доставкой
-                </div>
-              </div>
-              <div class="col-md-3 text-right-md">
-                <div class="push12"></div>
-                <div class="payments">
-                  <i class="fa fa-cc-visa f26"></i>
-                  <i class="fa fa-cc-mastercard f26"></i>
-                </div>
-              </div>
+            <button class="status__btn">Очистить хранилище</button>
+            <div class="status__desc">
+              <h2>Для проверки отработкаи:</h2>
+              <p>После оплаты "принят" с галочкой - 10 сек</p>
+              <p>Через 10 сек - статус "готовим", зеленый кружочек пульсирует</p>
+              <p>Через 20 сек статус "передан курьеру", зеленый кружочек пульсирует</p>
+              <p>Через 10 сек статус "доставлен"</p>
+              <p>Отработка привязана к номеру заказа в случае смены номера заказа происходит отчет по новой</p>
+              <p>При очистке хранилища, происходит эмуляция нового заказа</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- /. Footer -->
-
-    <!-- button to top -->
-
-    <span id="up" style="display: none"><i class="fa fa-angle-up"></i></span>
-
-    <!-- /. button to top -->
-
-    <!-- Modal click logo -->
-    <div
-      class="modal modal2 fade"
-      id="homeyou"
-      tabindex="-1"
-      aria-modal="true"
-      role="dialog"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close modal2-close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body"></div>
-          <div class="modal-footer">
-            <!-- <button type="button" class="btn btn-success modal2-close">Остаться на сайте</button> -->
-            <button
-              type="button"
-              class="btn btn-primary"
-              onclick="document.location = 'https://арарат.ленивыйповар.рф'"
-            >
-              В меню
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary"
-              onclick="document.location = 'https://ленивыйповар.рф'"
-            >
-              Выбрать другое заведение
-            </button>
-          </div>
-        </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__copy">© 2023 Все права защищены</p>
+        <p class="footer__user">developed by <a class="footer__user-link" href="https://sv-59.ru/" target="blank">S.Vedernikov</a></p>
       </div>
-    </div>
-
-    <!-- Modal click delivery -->
-    <div
-      class="modal modal2 fade"
-      id="deli"
-      tabindex="-1"
-      aria-modal="true"
-      role="dialog"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header"></div>
-          <div class="modal-body"></div>
-          <div class="modal-footer"></div>
-        </div>
-      </div>
-    </div>
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="./assets/template/js/jquery.min.js"></script>
-    <script src="./assets/template/js/bootstrap.min.js"></script>
-    <script src="./assets/template/js/modal.js"></script>
-
-    <script src="./assets/template/js/modernizr.js"></script>
-    <script src="./assets/template/js/jquery.fancybox.js"></script>
-    <script src="./assets/template/js/slick.min.js"></script>
-    <script src="./assets/template/js/jquery.viewportchecker.js"></script>
-    <script src="./assets/template/js/jquery.maskedinput.js"></script>
-    <script src="./assets/template/js/jquery.mousewheel.js"></script>
-    <script src="./assets/template/js/jquery.formstyler.js"></script>
-    <script src="./assets/template/js/jquery.jscrollpane.min.js"></script>
-    <script src="./assets/template/js/scripts.js?v7"></script>
-
-    <script>
-      jQuery(document).ready(function ($) {
-        function check_bgr(data) {
-          miniShop2.Callbacks.Cart.add.response.success = function () {
-            $(data).children(".fa-spinner").addClass("submit-spinner_hide");
-            $(data).children(".fa-check").removeClass("submit-spinner_hide");
-            setTimeout(function () {
-              $(data).children(".fa-check").addClass("submit-spinner_hide");
-              $(data).children("#fa").addClass("fa-shopping-cart");
-            }, 1000);
-            return true;
-          };
-        }
-
-        $(".cart-btn").click(function (e) {
-          $(this).attr("disabled", true);
-          $(this).children("#fa").removeClass("fa-shopping-cart");
-          $(this).children(".fa-spinner").removeClass("submit-spinner_hide");
-          check_bgr(this);
-          $(this).attr("disabled", false);
-        });
-
-        // закрываем, в случае, если "продолжить покупки"
-
-        $(".logo a").click(function (e) {
-          e.preventDefault();
-          $("body").css("overflow", "hidden");
-          $("#homeyou").show();
-        });
-        $(".modal2-close").click(function () {
-          $("#homeyou").hide();
-          $("body").css("overflow", "auto");
-        });
-
-        $(".modal2-close").click(function () {
-          $("#deli").hide();
-          $("body").css("overflow", "auto");
-        });
-      });
-    </script>
+    </footer>
+    <script src="./js/script.min.js"></script>
+    <script src="./js/script-widget.min.js"></script>
   </body>
 </html>
